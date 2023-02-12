@@ -117,7 +117,10 @@ namespace Exercise_4.Theacher
         {
            
         }
-
+        private void back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
         void GameOver()
         {
             if (b1.Text == b2.Text && b2.Text == b3.Text && b1.Text != "")

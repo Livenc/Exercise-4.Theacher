@@ -33,6 +33,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -70,6 +71,24 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // back
+            // 
+            this.back.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.back.FlatAppearance.BorderSize = 0;
+            this.back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.back.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.back.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.back.Location = new System.Drawing.Point(0, 420);
+            this.back.Margin = new System.Windows.Forms.Padding(0);
+            this.back.Name = "back";
+            this.back.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.back.Size = new System.Drawing.Size(280, 25);
+            this.back.TabIndex = 13;
+            this.back.Text = "Exit";
+            this.back.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.back.UseVisualStyleBackColor = false;
+            this.back.Click += new System.EventHandler(this.back_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -77,6 +96,7 @@
             this.BackgroundImage = global::Exercise_4.Theacher.Properties.Resources.firefox;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(280, 444);
+            this.Controls.Add(this.back);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -98,6 +118,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button back;
     }
 }
 

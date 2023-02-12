@@ -48,5 +48,10 @@ namespace Exercise_4.Theacher
             openIA = null;
             this.Show();
         }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -43,6 +43,7 @@ namespace Exercise_4.Theacher
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.back = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -207,6 +208,23 @@ namespace Exercise_4.Theacher
             this.label2.TabIndex = 12;
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // back
+            // 
+            this.back.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.back.FlatAppearance.BorderSize = 0;
+            this.back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.back.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.back.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.back.Location = new System.Drawing.Point(0, 420);
+            this.back.Margin = new System.Windows.Forms.Padding(0);
+            this.back.Name = "back";
+            this.back.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.back.Size = new System.Drawing.Size(280, 25);
+            this.back.TabIndex = 13;
+            this.back.Text = "Exit";
+            this.back.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.back.UseVisualStyleBackColor = false;
+            this.back.Click += new System.EventHandler(this.back_Click);
             // GameXandO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -214,6 +232,7 @@ namespace Exercise_4.Theacher
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(280, 444);
+            this.Controls.Add(this.back);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -242,5 +261,6 @@ namespace Exercise_4.Theacher
         private Panel panel1;
         private Label label1;
         private Label label2;
+        private Button back;
     }
 }
