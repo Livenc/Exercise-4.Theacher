@@ -49,6 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BankApp\BankApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BankApp\BankApp.Designer.cs">
+      <DependentUpon>BankApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BankApp\BankAppAddMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BankApp\BankAppAddMoney.Designer.cs">
+      <DependentUpon>BankAppAddMoney.cs</DependentUpon>
+    </Compile>
     <Compile Include="calculatorApp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +87,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BankApp\BankApp.resx">
+      <DependentUpon>BankApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BankApp\BankAppAddMoney.resx">
+      <DependentUpon>BankAppAddMoney.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="calculatorApp.resx">
       <DependentUpon>calculatorApp.cs</DependentUpon>
     </EmbeddedResource>

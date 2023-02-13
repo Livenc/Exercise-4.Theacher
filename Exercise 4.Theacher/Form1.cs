@@ -62,5 +62,14 @@ namespace Exercise_4.Theacher
             calcApp = null;
             this.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            BankApp bankApp = new BankApp();
+            bankApp.ShowDialog();
+            bankApp = null;
+            this.Show();
+        }
     }
 }
