@@ -17,7 +17,7 @@ namespace Exercise_4.Theacher
         {
             InitializeComponent();
         }
-        string player1 = "X", player2 = "Y";
+        string player1 = "X", player2 = "O";
         int step = 0;
 
 
@@ -171,7 +171,7 @@ namespace Exercise_4.Theacher
             }
             else if (b1.Text != "" && b2.Text != "" && b3.Text != "" && b4.Text != "" && b5.Text != "" && b6.Text != "" && b7.Text != "" && b8.Text != "" && b9.Text != "")
             {
-                label2.Text = $" Nichia {b1.Text}";
+                label2.Text = $" Draw";
                 Reset();
             }
 
