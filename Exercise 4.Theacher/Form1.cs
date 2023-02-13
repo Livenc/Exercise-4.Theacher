@@ -53,5 +53,14 @@ namespace Exercise_4.Theacher
         {
             this.Close();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            calculatorApp calcApp = new calculatorApp();
+            calcApp.ShowDialog();
+            calcApp = null;
+            this.Show();
+        }
     }
 }
