@@ -79,6 +79,7 @@
     <Compile Include="GameXandO.Designer.cs">
       <DependentUpon>GameXandO.cs</DependentUpon>
     </Compile>
+    <Compile Include="Number.cs" />
     <Compile Include="OpenIA.cs">
       <SubType>Form</SubType>
     </Compile>
